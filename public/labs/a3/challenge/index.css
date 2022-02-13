@@ -344,7 +344,7 @@
 @media (min-width: 600px) and (max-width: 1200px) {
 
     .media-query-mine {
-        font-family: Cursiva;
+        font-family: "Arial Narrow";
         font-color: white;
         font-size: 100px;
     }
