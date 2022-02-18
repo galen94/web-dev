@@ -214,10 +214,8 @@
     border-style: hidden;
     height: 40px;
     width: 75px;
-    float: right;
+    /*float: right;*/
     border-radius: 50px;
-    border-style: hidden;
-    padding-bottom: 0px;
 }
 
 .wd-margin-top-link-list{
@@ -317,14 +315,29 @@
 }
 
 .wd-user-parent{
-    text-align: justify;
+    justify-content: space-between;
+   /* text-align: justify;*/
     display: flex;
     align-items: center;
 }
 
+
+
 .wd-user-child {
     vertical-align: middle;
 }
+/******/
+.wrap {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.wrap div:last-child {
+    margin-left: auto;
+}
+
+/*****/
 
 @media (min-width: 0px) and (max-width: 575px) {
     .media-query {
@@ -347,6 +360,10 @@
         background-color: blue;
         color: white;
     }
+}
+
+.wd-inline-home{
+    display: inline-block;
 }
 
 
