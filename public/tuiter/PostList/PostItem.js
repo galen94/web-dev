@@ -24,11 +24,11 @@ const PostItem = (post) => {
      
     <div>
         <ul class="wd-icon-menu-start-post">
-            <li class="wd-first-icon-post"><a href="#"><i class="fa fa-comment wd-react-icon-style-post"></i></a></li>
+            <li class="wd-first-icon-post"><a href="#"><i class="far fa-comment wd-react-icon-style-post"></i></a></li>
             <li class="wd-numbers-gray-post"> ${post.comments}</li>
             <li class="wd-icon-menu-post"><a href="#"><i class="fa fa-retweet wd-react-icon-style-post"></i></a></li>
             <li class="wd-numbers-gray-post"> ${post.shares}</li>
-            <li class="wd-icon-menu-post"><a href="#"><i class="fa fa-heart wd-react-icon-style-post"></i></a></li>
+            <li class="wd-icon-menu-post"><a href="#"><i class="far fa-heart wd-react-icon-style-post"></i></a></li>
             <li class="wd-numbers-gray-post"> ${post.likes}</li>
             <li class="wd-icon-menu-post"><a href="#"><i class="fa fa-share wd-react-icon-style-post"></i></a></li>
         </ul>
