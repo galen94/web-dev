@@ -123,6 +123,16 @@ body
     height: 300px;
     /*margin-left: 59px;*/
     /*margin-left: 76px;*/
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: block;
+}
+
+.wd-post-image-post-without{
+    width: 530px;
+    height: 300px;
+    /*margin-left: 59px;*/
+    /*margin-left: 76px;*/
     border-radius: 20px;
     display: block;
 }
@@ -133,8 +143,9 @@ body
 }
 
 .wd-post-text-area-post{
-    width: 504px;
-    margin-left: 76px;
+    width: 530px;
+    /*margin-left: 64px;*/
+    display: block;
 }
 
 .wd-image-title-under-post{

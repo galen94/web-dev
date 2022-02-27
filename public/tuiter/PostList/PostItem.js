@@ -10,11 +10,18 @@ const PostItem = (post) => {
     <div class="wd-margin-left-main-content-post">
         <div class=" wd-main-content-post">  ${post.title}
     </div>
-    <img class="wd-border-thin-post wd-border-solid-post wd-border-gray-post wd-post-image-post"
+    
+     ${post.postTitle ? 
+        ` <img class="wd-border-thin-post wd-border-solid-post wd-border-gray-post wd-post-image-post"
       src= ${post.image} />
-<!--    <div class="wd-border-top-color-black-post wd-post-text-area-post wd-rounded-text-area wd-border-thin-post wd-border-solid-post wd-border-gray-post">-->
-<!--        <div class="wd-image-title-under-post">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</div>-->
-<!--    </div>-->
+        <div class="wd-border-top-color-black-post wd-post-text-area-post wd-rounded-text-area wd-border-thin-post wd-border-solid-post wd-border-gray-post">
+        <div class="wd-image-title-under-post">${post.postTitle}
+        </div>
+        <div class="wd-image-text-under">${post.postText}
+        </div>
+        </div>` : `<img class="wd-border-thin-post wd-border-solid-post wd-border-gray-post wd-post-image-post-without"
+                       src=${post.image} />`  }
+     
     <div>
         <ul class="wd-icon-menu-start-post">
             <li class="wd-first-icon-post"><a href="#"><i class="fa fa-comment wd-react-icon-style-post"></i></a></li>

@@ -26,14 +26,3 @@ const WhoToFollowListItem = (who) => {
 
 export default WhoToFollowListItem;
 
-
-// const TodoItem = (todo) => {
-//     return(`
-//         <li>
-//             ${todo.title}
-//             (${todo.status})
-//         </li>
-//     `);
-// }
-// export default TodoItem;
-

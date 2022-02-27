@@ -5,8 +5,8 @@ const NavigationSidebar = (active) => {
 
     return(`
 
-            <ul id="main-nav" class="list-group wd-list-style">
-                <li><a href="#" class="list-group-item " >
+            <ul id="main-nav" class="list-group wd-list-style ">
+                <li class="wd-navigation-rounded-corners-top"><a href="#" class="list-group-item " >
                     <i class="fab fa-twitter"></i></a>
                     <a href="../HomeScreen/home.html" class="list-group-item list-group-item-action ${active === 'home' ? 'active' : ''}">
                     <i class="fa fa-home"></i>
@@ -36,7 +36,7 @@ const NavigationSidebar = (active) => {
                     <i class=" fa fa-user"></i>
                     <span class="wd-hide-words">Profile</span></a>
                     </li>
-                <li><a href="#" class="list-group-item list-group-item-action ${active === 'more' ? 'active' : ''}">
+                <li class="wd-navigation-rounded-corners-bottom"><a href="#" class=" list-group-item list-group-item-action ${active === 'more' ? 'active' : ''}">
                     <i class=" fa fa-circle"></i>
                     <span class="wd-hide-words">More</span></a>
                     </li>

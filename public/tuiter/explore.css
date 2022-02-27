@@ -655,3 +655,13 @@ body{
 .wd-list-style{
     list-style:none;
 }
+
+.wd-navigation-rounded-corners-top{
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.wd-navigation-rounded-corners-bottom{
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
