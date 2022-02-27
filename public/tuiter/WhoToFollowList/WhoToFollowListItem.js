@@ -11,7 +11,7 @@ const WhoToFollowListItem = (who) => {
                             <span class="wd-white-words">${who.userName}</span>
                             <i class="wd-white-circle fa fa-circle"></i>
                             <br>
-                            <span class="wd-gray-words">${who.handle}</span>
+                            <span class="wd-white-handles">${who.handle}</span>
                     </div>
                     <div>
                         <button class="wd-user-child override-follow btn-primary">

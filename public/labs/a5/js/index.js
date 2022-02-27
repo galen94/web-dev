@@ -98,8 +98,14 @@ console.log(twoSquared);
 console.log(threePlusOne);
 
 
+console.log('Arrays');
+
 let numberArray1 = [1, 2, 3, 4, 5];
+console.log(numberArray1);
+
 let stringArray1 = ['string1', 'string2'];
+console.log(stringArray1);
+
 let variableArray1 = [
     functionScoped,
     blockScoped,
@@ -108,12 +114,8 @@ let variableArray1 = [
     stringArray1
 ];
 
-console.log('Arrays');
 
-console.log(numberArray1);
-console.log(stringArray1);
 console.log(variableArray1);
-console.log('hello');
 console.log(functionScoped);
 console.log(blockScoped);
 console.log(constant1);

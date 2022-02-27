@@ -137,6 +137,10 @@ body
     display: block;
 }
 
+.wd-no-underline{
+    text-decoration: none;
+}
+
 .wd-rounded-text-area{
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;

@@ -1,7 +1,7 @@
 /* eslint-env jquery */
 
-import NavigationSidebar from "../NavigationSidebar/index.js";
-import WhoToFollowList from "../WhoToFollowList/index.js";
+import NavigationSidebar from "../NavigationSidebar/NavigationSidebar.js";
+import WhoToFollowList from "../WhoToFollowList/WhoToFollowList.js";
 import ExploreComponent from "./ExploreComponent.js";
 
 

@@ -301,6 +301,12 @@ body{
     font-weight: bold;
 }
 
+.wd-white-handles{
+    color: white;
+    font-size: 16px;
+    font-family: Helvetica;
+}
+
 .wd-white-circle{
     color: white;
 }

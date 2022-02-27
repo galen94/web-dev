@@ -1,8 +1,8 @@
 /* eslint-env jquery */
 
-import NavigationSidebar from "../NavigationSidebar/index.js";
-import PostSummaryList from "../PostSummaryList/index.js";
-import PostList from "../PostList/PostListComponent.js";
+import NavigationSidebar from "../NavigationSidebar/NavigationSidebar.js";
+import PostSummaryList from "../PostSummaryList/PostSummaryList.js";
+import PostList from "../PostList/PostList.js";
 
 
 
