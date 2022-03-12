@@ -8,8 +8,7 @@ const PostItem = (post) => {
     <i class="fa fa-circle"></i>
     <div class="wd-padded-top-post wd-handle-styling-post"> ${post.handle} -  ${post.time}</div>
     <div class="wd-margin-left-main-content-post">
-        <div class=" wd-main-content-post">  ${post.title}
-    </div>
+        <div class=" wd-main-content-post">  ${post.title}</div>
     
      ${post.postTitle ? 
         ` <img class="wd-border-thin-post wd-border-solid-post wd-border-gray-post wd-post-image-post"
