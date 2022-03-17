@@ -185,8 +185,9 @@
 }
 
 .wd-react-icon-style-post{
-    color: rgb(110, 118, 125);
+    /*color: rgb(110, 118, 125);*/
     padding-top: 12px;
+    color: white;
 }
 
 .wd-react-heart-style{
@@ -195,7 +196,8 @@
 
 .wd-numbers-gray-post{
     display:inline;
-    color: rgb(110, 118, 125);
+    /*color: rgb(110, 118, 125);*/
+    color: white;
     padding-right: 60px;
 }
 
@@ -211,4 +213,36 @@
 
 .wd-name-circle-margin{
     margin-right: 4px;
+}
+
+/*******Whats happening**********
+ */
+
+.wd-background-text-area{
+    background-color: black;
+    color: white;
+    border-bottom-style: solid ;
+    border-bottom-color:  gray;
+    padding-top: 10px;
+
+}
+
+.wd-button-float{
+    float: right;
+    padding-bottom: 15px;
+}
+
+.wrap-tuit {
+    padding-top: 10px;
+    display: flex;
+    width: 100%;
+    /*align-items: center;*/
+    justify-content: space-between;
+}
+.wrap-tuit div:last-child {
+    margin-left: auto;
+}
+
+.wd-stats-color{
+    color: white;
 }

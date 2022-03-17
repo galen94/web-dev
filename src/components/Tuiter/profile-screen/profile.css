@@ -1,0 +1,117 @@
+
+
+.wd-space-for-name{
+    padding-right: 5px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.wd-upper-space-after-photo{
+    padding-top: 25px;
+    margin-bottom: 0px;
+    color: white;
+}
+
+.wd-tuit-number{
+    font-size: 20px;
+    color: gray;
+    margin-top: -8px;
+}
+
+.wd-profile-photo-place{
+    /*top: -40%;*/
+    left: 20px;
+    top: 60%;
+}
+
+.wd-profile-photo-place-edit{
+    /*top: -40%;*/
+    left: 20px;
+    top: 50%;
+}
+.wd-profile-photo{
+    border-radius: 50%;
+    border: 4px solid black;
+    /*border-color: black;*/
+
+}
+
+
+
+.wd-space-handle{
+    margin-top: -10px;
+    padding-bottom: 10px;
+    color: #636464;
+}
+
+.wd-bio{
+    color: white;
+}
+
+.wd-icons{
+    font-size: 15px;
+    margin-left: 15px;
+    color: #5b5b62;
+}
+
+.wd-icon-words{
+    font-size: 15px;
+    color: #5b5b62;
+}
+
+.wd-first-icon{
+    font-size: 15px;
+    color: #5b5b62;
+}
+
+.wd-follow-color{
+    color: white;
+}
+
+.wd-edit-button{
+    color: white;
+}
+
+/*.wd-x-space{*/
+/*    margin-right: 20px;*/
+/*}*/
+
+.wrap {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    /*justify-content: space-between;*/
+}
+.wrap div:last-child {
+    margin-left: auto;
+}
+
+.wd-photo-spaces{
+    padding-bottom: 50px;
+}
+
+.wd-input-field{
+    background-color: black;
+    color: white;
+}
+
+.wd-edit-labels{
+    font-size: 14px;
+    color: #636464;
+}
+
+.wd-top-icons-color{
+    color: white;
+}
+
+.wd-save{
+    background-color: white;
+}
+
+.wd-follower-spacing{
+    padding-left: 10px;
+}
+
+.wd-space-divs{
+    padding-bottom: 10px;
+}
