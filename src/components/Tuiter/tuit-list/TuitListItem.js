@@ -15,14 +15,8 @@ const TuitlistItem = ({tuit, likeTuit}) => {
                 <div className="wd-container-post  ">
                     <i onClick={() =>
                         deleteTuit(tuit)}
-                       className="fa fa-ellipsis-h fa-pull-right">
-                  {/*//      className="fas fa-remove fa-2x*/}
-                  {/*// fa-pull-right"*/}
-                  {/*//   >*/}
+                    className="fa fa-ellipsis-h fa-pull-right">
                 </i>
-
-                    {/*<a href="#"><i className="fa fa-xmark "></i></a>*/}
-                    {/*<a href="#"><i className="fa fa-ellipsis-h wd-ellipses-post wd-padded-top-post"></i></a>*/}
                     <img className="wd-avatar-picture-post" src=  {tuit["avatar-image"]} />
                     <div className="wd-padded-top-post wd-User-Name-styling-post wd-name-circle-margin"> {tuit.postedBy.username}</div>
                     <i className="wd-name-circle-margin fa fa-circle"></i>

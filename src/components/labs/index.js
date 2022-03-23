@@ -27,10 +27,10 @@ const Labs = () => {
                 </Link>
 
                 <ReduxExamples/>
-                <ConditionalOutput/>
-                <Styles/>
-                <Classes/>
-                <TodoList/>
+                {/*<ConditionalOutput/>*/}
+                {/*<Styles/>*/}
+                {/*<Classes/>*/}
+                {/*<TodoList/>*/}
             </div>
 
 )

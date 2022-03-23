@@ -221,9 +221,10 @@
 .wd-background-text-area{
     background-color: black;
     color: white;
-    border-bottom-style: solid ;
-    border-bottom-color:  gray;
+    /*border-bottom-style: solid ;*/
+    /*border-bottom-color:  gray;*/
     padding-top: 10px;
+    width: 560px;
 
 }
 
@@ -237,7 +238,8 @@
     display: flex;
     width: 100%;
     /*align-items: center;*/
-    justify-content: space-between;
+    /*justify-content: space-between;*/
+    /*justify-content: right;*/
 }
 .wrap-tuit div:last-child {
     margin-left: auto;
@@ -246,3 +248,40 @@
 .wd-stats-color{
     color: white;
 }
+
+.wd-what-happening-top-part{
+    /*margin-left: 12px;*/
+    /*margin-right: 16px;*/
+    display: flex;
+    /*width: 100%;*/
+
+}
+
+.wd-icons-below{
+    padding-left: 80px;
+}
+
+.wd-borders-icons-part{
+    border-bottom: solid 1px gray;
+    margin-bottom: 5px;
+    /*border-top-color: lightgrey;*/
+}
+
+.wd-whats-happening-left-margin{
+    margin-right: 25px;
+}
+
+.wd-back-arrow-flex{
+    display: flex;
+    align-items: center;
+}
+
+.wd-arrow-right-space{
+    margin-right: 40px;
+    margin-left: 20px;
+}
+
+.wd-arrow-color{
+    color: white;
+}
+

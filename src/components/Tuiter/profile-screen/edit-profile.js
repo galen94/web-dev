@@ -3,16 +3,29 @@ import {Link} from "react-router-dom";
 import './profile.css';
 import {useDispatch, useSelector} from "react-redux";
 
+/**
+ * TO DO:
+ * tuits delete and edit-profile x icon, profile info icons
+ * profile dates reformatted
+ * video posted instead of picture
+ * navigation active color
+ * what's happening width screen flexible
+ *
+ *
+ * @return {JSX.Element}
+ * @constructor
+ */
+
 const EditProfile = () => {
     const profileData = useSelector(state => state.profile);
-    const [myState, setMyState] = useState(profileData);
+    let [profile, setProfile] = useState(profileData);
 
     const dispatch = useDispatch();
     const saveClickHandler = () => {
-        console.log(myState);
+        console.log(profile);
         dispatch({
             type: 'save-changes',
-            profile: myState
+            profile: profile
         });
     }
 
@@ -21,8 +34,11 @@ const EditProfile = () => {
             <div>
                 <div className="wrap">
                     <Link to="/tuiter/profile" className="wd-x-space fa-pull-left fw-bolder mt-2 mb-2 ms-2">
-                    <i className="wd-top-icons-color fa fa-ellipsis-h"></i>
-                </Link>
+                        {/*<i className="wd-top-icons-color fa fa-xmark"></i>*/}
+                        <i className="wd-top-icons-color fa fa-ellipsis-h"></i>
+                    {/*    <i className="wd-top-icons-color fa fa-x"></i>*/}
+                    {/*    <i className="fa-regular fa-xmark"></i>*/}
+                    </Link>
                     <h5 className=" p-2 mb-0 pb-0 fw-bolder">Edit profile</h5>
                     <Link to="/tuiter/profile" onClick={saveClickHandler} className="wd-save btn btn-dark rounded-pill fa-pull-right fw-bolder mt-2 mb-2 me-2">
                     Save
@@ -45,9 +61,9 @@ const EditProfile = () => {
                     <label htmlFor="first-name" className="wd-edit-labels">Name</label>
                     <input id="first-name"
                            className="wd-input-field p-0 form-control border-0"
-                           placeholder={myState.firstName}
+                           placeholder={profile.firstName}
                             onChange={(event) =>
-                                setMyState({...myState, firstName: event.target.value})}
+                                setProfile({...profile, firstName: event.target.value})}
                     />
                 </div>
 
@@ -58,35 +74,35 @@ const EditProfile = () => {
                         className="wd-input-field p-0 form-control border-0"
                         placeholder="Your bio"
                         id="bio"
-                        placeholder={myState.bio}
+                        placeholder={profile.bio}
                         onChange={(event) =>
-                            setMyState({...myState, bio: event.target.value})}></textarea>
+                            setProfile({...profile, bio: event.target.value})}></textarea>
                 </div>
                 <div className="border border-secondary rounded-3 p-2 mb-3">
                     <label htmlFor="location" className="wd-edit-labels">Location</label>
                     <input id="location"
                            className="wd-input-field p-0 form-control border-0"
-                           placeholder={myState.location}
+                           placeholder={profile.location}
                            onChange={(event) =>
-                               setMyState({...myState, location: event.target.value})}/>
+                               setProfile({...profile, location: event.target.value})}/>
                 </div>
                 <div className="border border-secondary rounded-3 p-2 mb-3">
                     <label htmlFor="email" className="wd-edit-labels">Website</label>
                     <input id="email" placeholder="yourWebsite@website.com"
                            className="wd-input-field p-0 form-control border-0"
                            type="email"
-                           placeholder={myState.website}
+                           placeholder={profile.website}
                            onChange={(event) =>
-                               setMyState({...myState, website: event.target.value})}/>
+                               setProfile({...profile, website: event.target.value})}/>
                 </div>
                 <div className="border border-secondary rounded-3 p-2 mb-3">
                     <label htmlFor="date-of-birth" className="wd-edit-labels">Birth date</label>
                     <input id="date-of-birth"
                            className="wd-input-field p-0 form-control border-0"
                            type="date"
-                            placeholder={myState.dateOfBirth}
+                            placeholder={profile.dateOfBirth}
                            onChange={(event) =>
-                               setMyState({...myState, dateOfBirth: event.target.value})}/>
+                               setProfile({...profile, dateOfBirth: event.target.value})}/>
                 </div>
 
 
