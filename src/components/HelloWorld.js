@@ -11,7 +11,7 @@ const HelloWorld = () => {
             {/*<Link to="/tuiter">*/}
             {/*    Tuiter*/}
             {/*</Link>*/}
-            <Link to="/tuiter/home">
+            <Link to="/tuiter/">
                 Tuiter
             </Link>
         </>

@@ -28,7 +28,7 @@ const reducer = combineReducers({
 const store = createStore(reducer);
 
 
-const Tuiter = (active) => {
+const Tuiter = () => {
     return(
         <Provider store={store}>
         <div className="row mt-2">
@@ -39,7 +39,6 @@ const Tuiter = (active) => {
                 <Outlet/>
             </div>
             <div className="d-none d-lg-block col-lg-4 col-xl-4">
-                {/*<h2>Who to follow</h2>*/}
                 <WhoToFollowList/>
             </div>
         </div>

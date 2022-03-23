@@ -3,18 +3,15 @@ import {useSelector} from "react-redux";
 import {Link} from "react-router-dom";
 import './profile.css';
 
-const Profile = (
-//     {profile = {
-//     firstName: "Luciano", lastName: "Pavarotti", handle: "lpavarotti",
-//     profilePicture: "pavarotti.png", bannerPicture: "operahouse.png",
-//     bio: "#1 singer in the world",
-//     website: "youtube.com/pavarotti",
-//     location: "Modena, Italy",	dateOfBirth: "10/12/1935", dateJoined: "4/2000",
-//     followingCount: "100 ",	followersCount: "999k "
-// }
-//                  }
-                 ) => {
-     const profile = useSelector(state => state.profile);
+const Profile = () => {
+     const profile = useSelector(state =>
+
+     {console.log("We are in profile")
+         console.log(state.profile)
+     return state.profile;
+     }
+     );
+
 return(
     <div>
         <h1 className="wd-space-for-name"> {profile.firstName} {profile.lastName}</h1>
@@ -43,7 +40,7 @@ return(
         <div className="wd-space-divs">
             <span><i className="wd-first-icon fa fa-calendar"></i><span className="wd-first-icon"> {profile.location}</span> </span>
             <span><i className="wd-icons fa fa-calendar"></i><span className="wd-icon-words"> Born {profile.dateOfBirth}</span> </span>
-            <span><i className="wd-icons fa fa-calendar"></i><span className="wd-icon-words"> {profile.dateJoined}</span> </span>
+            <span><i className="wd-icons fa fa-calendar"></i><span className="wd-icon-words"> Joined Tuiter on {profile.dateJoined}</span> </span>
         </div>
 
         <div className="">

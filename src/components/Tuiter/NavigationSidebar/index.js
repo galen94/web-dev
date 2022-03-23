@@ -1,58 +1,65 @@
 
 import React from "react";
 import './Navigation.css';
-import {Link, useParams} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 
-const NavigationSidebar = ({active = ''}) => {
+const NavigationSidebar = () => {
+    // {active = ''}
 
-    const {id} = useParams();
+//wd-list-style
+    // let params = useParams();
+    //id="main-nav"
+
+   // const location = useLocation().pathname.split("/");
+    //const location = useLocation().pathname.replace(/[^a-zA-Z0-9\/]/g, '').split("/")
+    //const match = location[location.length-1];
+
+    const location = useLocation().pathname.split("/")
+
+    const match = location[location.length-1]
+
     return(
         <div>
-            <ul id="main-nav" className="list-group wd-list-style ">
-                <li className="wd-navigation-rounded-corners-top">
+            <ul className="list-group">
+                <li className="list-unstyled wd-navigation-rounded-corners-top">
                     <Link to="/labs" className="list-group-item ">
                         <i className="fab fa-twitter"></i>
                     </Link>
                 </li>
-                <li>
-                    <Link to="/tuiter/" className={`list-group-item list-group-item-action ${id === 'home' ? 'active' : ''}`}>
-                    {/*<a href="#" className="list-group-item " >*/}
-                    {/*<i className="fab fa-twitter"></i></a>*/}
-                    {/*<a href="../HomeScreen/home.html" className={`list-group-item list-group-item-action ${active === 'home' ? 'active' : ''}`}>*/}
+                <li className="list-unstyled">
+                    <Link to="" className={`list-group-item list-group-item-action ${match === "tuiter" ? "wd-list-group-item-active" : ""}`}>
                     <i className="wd-icon-padding-right-navigation fa fa-home"></i>
                     <span className="wd-hide-words">Home</span>
-                    {/*</a>*/}
                     </Link>
                 </li>
-               <li>
-                   <Link to="/tuiter/explore" className={`list-group-item list-group-item-action  ${id === 'explore' ? 'active' : ''}`}>
-                   {/*<a href="../ExploreScreen/explore.html" className={`list-group-item list-group-item-action  ${active === 'explore' ? 'active' : ''}`}>*/}
+               <li className="list-unstyled">
+                   <Link to="explore" className={`list-group-item list-group-item-action ${match === "explore" ? "wd-list-group-item-active" : ""}`}>
                     <i className="wd-icon-padding-right-navigation fa fa-hashtag"></i>
                     <span className="wd-hide-words">Explore</span>
-               {/*</a>*/}
                    </Link>
-                    </li>
-               <li> <a href="#" className={`list-group-item list-group-item-action ${id === 'notifications' ? 'active' : ''}`}>
+               </li>
+               <li className="list-unstyled"> <a href="#" className={`list-group-item list-group-item-action ${match === "notifications" ? "wd-list-group-item-active" : ""}`}>
                     <i className="wd-icon-padding-right-navigation fa fa-bell"></i>
                     <span className="wd-hide-words">Notifications</span></a>
                     </li>
-               <li> <a href="#" className={`list-group-item list-group-item-action ${id === 'messages' ? 'active' : ''}`}>
+               <li className="list-unstyled"> <a href="#" className={`list-group-item list-group-item-action ${match === "messages" ? "wd-list-group-item-active" : ""}`}>
                     <i className="wd-icon-padding-right-navigation fa fa-envelope"></i>
                     <span className="wd-hide-words">Messages</span></a>
                     </li>
-                <li><a href="#" className={`list-group-item list-group-item-action ${id === 'bookmarks' ? 'active' : ''}`}>
+                <li className="list-unstyled"><a href="#" className={`list-group-item list-group-item-action ${match === "bookmarks" ? "wd-list-group-item-active" : ""}`}>
                     <i className="wd-icon-padding-right-navigation fa fa-bookmark"></i>
                     <span className="wd-hide-words">Bookmarks</span></a>
                     </li>
-               <li> <a href="#" className={`list-group-item list-group-item-action ${id === 'lists' ? 'active' : ''}`}>
+               <li className="list-unstyled"> <a href="#" className={`list-group-item list-group-item-action ${match === "lists" ? "wd-list-group-item-active" : ""}`}>
                     <i className="wd-icon-padding-right-navigation fa fa-list"></i>
                     <span className="wd-hide-words">Lists</span></a>
                     </li>
-               <li>  <Link to="/tuiter/profile" className={`list-group-item list-group-item-action ${id === 'profile' ? 'active' : ''}`}>
+               <li className="list-unstyled">
+                   <Link to="profile" className={`list-group-item list-group-item-action ${match === "profile" ? "wd-list-group-item-active" : ""}`}>
                     <i className="wd-icon-padding-right-navigation fa fa-user"></i>
                    <span className="wd-hide-words">Profile</span></Link>
-                    </li>
-                <li className="wd-navigation-rounded-corners-bottom"><a href="#" className={`list-group-item list-group-item-action ${id === 'more' ? 'active' : ''}`}>
+               </li>
+                <li className="list-unstyled wd-navigation-rounded-corners-bottom"><a href="#" className={`list-group-item list-group-item-action ${match === "more" ? "wd-list-group-item-active" : ""}`}>
                     <i className="wd-icon-padding-right-navigation fa fa-circle"></i>
                     <span className="wd-hide-words">More</span></a>
                     </li>

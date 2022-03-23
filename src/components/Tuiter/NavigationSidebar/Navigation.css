@@ -673,3 +673,7 @@ body{
 .wd-icon-padding-right-navigation{
     padding-right: 10px;
 }
+
+.wd-list-group-item-active {
+    background-color: #2a9fd6;
+}
