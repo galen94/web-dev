@@ -5,7 +5,6 @@ import {useDispatch, useSelector} from "react-redux";
 
 /**
  * TO DO:
- * tuits delete and edit-profile x icon, profile info icons
  * navigation active color
  * what's happening width screen flexible
  * able to update photos?
