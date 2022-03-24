@@ -12,10 +12,10 @@ const TuitlistItem = ({tuit, likeTuit}) => {
     return(
         < >
             <li className=" list-group-item wd-post-background-color">
-                <div className="wd-container-post  ">
+                <div className="wd-container-post">
                     <i onClick={() =>
                         deleteTuit(tuit)}
-                    className="fa fa-ellipsis-h fa-pull-right">
+                    className="wd-x-tuit fa fa-window-close fa-pull-right">
                 </i>
                     <img className="wd-avatar-picture-post" src=  {tuit["avatar-image"]} />
                     <div className="wd-padded-top-post wd-User-Name-styling-post wd-name-circle-margin"> {tuit.postedBy.username}</div>
@@ -27,8 +27,26 @@ const TuitlistItem = ({tuit, likeTuit}) => {
 
                         {tuit.attachments ?
                             <>
-                            <img className='wd-border-thin-post wd-border-solid-post wd-border-gray-post wd-post-image-post-without' src={tuit.attachments.image}/>
+                            {tuit.attachments.image ?
+                                <> <img className='wd-border-thin-post wd-border-solid-post wd-border-gray-post wd-post-image-post-without' src={tuit.attachments.image}/>
+                                </> : ""  }
+                            {tuit.attachments.video ?
+                                <>
+                                    <iframe width="560"
+                                            height="315"
+                                            className='wd-border-thin-post wd-border-solid-post wd-border-gray-post wd-post-image-post-without'
+                                            src={tuit.attachments.video}
+                                            title="YouTube video player"
+                                            frameBorder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowFullScreen>
+                                    </iframe>
+                                </> : ""  }
                             </> : ""}
+
+                            {/*<>*/}
+                            {/*<img className='wd-border-thin-post wd-border-solid-post wd-border-gray-post wd-post-image-post-without' src={tuit.attachments.image}/>*/}
+                            {/*</> : ""}*/}
 
                         {/*{tuit.postTitle ?*/}
                         {/*    <>*/}

@@ -12,6 +12,17 @@ const Profile = () => {
      }
      );
 
+    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+    function convertDateBirth(myDate) {
+        var date = myDate.split("-");
+        return months[Number(date[1]) - 1] + " " + date[2] + ", " + date[0];
+    };
+    function convertDateJoined(myDate) {
+        var date = myDate.split("/");
+        return months[Number(date[0]) - 1] + ", " + date[1];
+    };
+
 return(
     <div>
         <div className="wd-back-arrow-flex">
@@ -19,7 +30,7 @@ return(
         <i className="wd-arrow-color fa fa-arrow-left"></i>
             </div>
             <div>
-        <h1 className="wd-space-for-name"> {profile.firstName} {profile.lastName}</h1>
+        <h1 className="wd-space-for-name"> {profile.firstName}</h1>
         <h2 className="wd-tuit-number">5,196 Tuits</h2>
             </div>
         </div>
@@ -38,15 +49,17 @@ return(
             </Link>
         </div>
 
-        <div className="wd-upper-space-after-photo wd-space-for-name"> {profile.firstName} {profile.lastName}</div>
+        <div className="wd-upper-space-after-photo wd-space-for-name"> {profile.firstName}</div>
         <div className="wd-space-handle"> @{profile.handle} </div>
         <div className="wd-bio wd-space-divs">
             {profile.bio}
         </div>
+
         <div className="wd-space-divs">
-            <span><i className="wd-first-icon fa fa-calendar"></i><span className="wd-first-icon"> {profile.location}</span> </span>
-            <span><i className="wd-icons fa fa-calendar"></i><span className="wd-icon-words"> Born {profile.dateOfBirth}</span> </span>
-            <span><i className="wd-icons fa fa-calendar"></i><span className="wd-icon-words"> Joined Tuiter on {profile.dateJoined}</span> </span>
+            <span><i className="wd-first-icon fa fa-location-arrow"></i><span className="wd-first-icon"> {profile.location}</span> </span>
+            <span><i className="wd-icons fa fa-birthday-cake"></i><span className="wd-icon-words"> Born {convertDateBirth(profile.dateOfBirth)} </span> </span>
+            {/*<span><i className="wd-icons fa fa-birthday-cake"></i><span className="wd-icon-words"> Born {profile.dateOfBirth}</span> </span>*/}
+            <span><i className="wd-icons fa fa-calendar"></i><span className="wd-icon-words"> Joined {convertDateJoined(profile.dateJoined)}</span> </span>
         </div>
 
         <div className="">

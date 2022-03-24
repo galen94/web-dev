@@ -1,16 +1,16 @@
 {
-  "firstName": "Luciano",
-    "lastName": "Pavarotti",
+  "firstName": "Luciano Pavarotti",
+    "lastName": "",
     "handle": "lpavarotti",
   "profilePicture": "pavarotti.png",
     "bannerPicture": "operahouse.png",
   "bio": "#1 singer in the world",
   "website": "youtube.com/webdevtv",
-  "location": "Boston, MA",
-    "dateOfBirth": "7/7/1968",
-    "dateJoined": "4/2009",
-  "followingCount": "312",
-    "followersCount": "180"
+  "location": "Modena, Italy",
+    "dateOfBirth": "1935-10-12",
+    "dateJoined": "09/2004",
+  "followingCount": "30",
+    "followersCount": "1.5M"
 }
 
 

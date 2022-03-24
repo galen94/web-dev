@@ -674,6 +674,14 @@ body{
     padding-right: 10px;
 }
 
-.wd-list-group-item-active {
+.list-group-item-active {
     background-color: #2a9fd6;
 }
+
+/*.list-group-item:hover {*/
+/*    background-color: red;*/
+/*}*/
+
+/*.list-group-item:visited {*/
+/*    background-color: #222;*/
+/*}*/

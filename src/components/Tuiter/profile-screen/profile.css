@@ -115,3 +115,8 @@
 .wd-space-divs{
     padding-bottom: 10px;
 }
+
+.wd-x-button{
+    /*background-color: black;*/
+    color: white;
+}

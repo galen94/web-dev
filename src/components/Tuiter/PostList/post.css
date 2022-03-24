@@ -268,7 +268,8 @@
 }
 
 .wd-whats-happening-left-margin{
-    margin-right: 25px;
+    margin-right: 10px;
+    margin-left: 15px;
 }
 
 .wd-back-arrow-flex{
@@ -285,3 +286,6 @@
     color: white;
 }
 
+.wd-x-tuit{
+    color: white;
+}

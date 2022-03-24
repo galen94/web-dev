@@ -6,11 +6,9 @@ import {useDispatch, useSelector} from "react-redux";
 /**
  * TO DO:
  * tuits delete and edit-profile x icon, profile info icons
- * profile dates reformatted
- * video posted instead of picture
  * navigation active color
  * what's happening width screen flexible
- *
+ * able to update photos?
  *
  * @return {JSX.Element}
  * @constructor
@@ -35,7 +33,7 @@ const EditProfile = () => {
                 <div className="wrap">
                     <Link to="/tuiter/profile" className="wd-x-space fa-pull-left fw-bolder mt-2 mb-2 ms-2">
                         {/*<i className="wd-top-icons-color fa fa-xmark"></i>*/}
-                        <i className="wd-top-icons-color fa fa-ellipsis-h"></i>
+                        <i className="wd-x-button fa fa-window-close"></i>
                     {/*    <i className="wd-top-icons-color fa fa-x"></i>*/}
                     {/*    <i className="fa-regular fa-xmark"></i>*/}
                     </Link>
