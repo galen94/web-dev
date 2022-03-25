@@ -1,13 +1,14 @@
+import './App.css';
+import './vendors/bootstrap/css/bootstrap.min.css';
+import './vendors/bootstrap/bootstrap.min.css';
+import './vendors/fontawesome/css/all.min.css';
+
 //import logo from './logo.svg';
 import HelloWorld from "./components/HelloWorld.js";
 import Labs from "./components/labs/index.js";
 import Tuiter from "./components/Tuiter/index.js";
 import React from "react";
 
-import './App.css';
-import './vendors/bootstrap/css/bootstrap.min.css';
-import './vendors/bootstrap/bootstrap.min.css';
-import './vendors/fontawesome/css/all.min.css';
 
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import HomeScreen from "./components/Tuiter/home-screen/HomeScreen.js";

@@ -3,15 +3,7 @@ import {Link} from "react-router-dom";
 import './profile.css';
 import {useDispatch, useSelector} from "react-redux";
 
-/**
- * TO DO:
- * navigation active color
- * what's happening width screen flexible
- * able to update photos?
- *
- * @return {JSX.Element}
- * @constructor
- */
+
 
 const EditProfile = () => {
     const profileData = useSelector(state => state.profile);

@@ -15,7 +15,8 @@ const NavigationSidebar = () => {
     //const match = location[location.length-1];
 
     const location = useLocation().pathname.split("/");
-    const match = location[location.length-1];
+    const newLocation = location.filter(element => element != "");
+    const match = newLocation[newLocation.length-1];
 
     return(
         <div>
