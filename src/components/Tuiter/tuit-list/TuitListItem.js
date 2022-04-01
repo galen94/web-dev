@@ -62,9 +62,9 @@ const TuitlistItem = ({tuit, likeTuit}) => {
                         <div className="">
                             <ul className="wd-icon-menu-start-post">
                                 <li className="wd-first-icon-post"><a href="#"><i className="far fa-comment wd-react-icon-style-post"></i></a></li>
-                                <li className="wd-numbers-gray-post"> {tuit.stats.comments}</li>
+                                {/*<li className="wd-numbers-gray-post"> {tuit.stats.comments}</li>*/}
                                 <li className="wd-icon-menu-post"><a href="#"><i className="fa fa-retweet wd-react-icon-style-post"></i></a></li>
-                                <li className="wd-numbers-gray-post"> {tuit.stats.retuits}</li>
+                                {/*<li className="wd-numbers-gray-post"> {tuit.stats.retuits}</li>*/}
                                 <li className="wd-first-icon-post"> <TuitStats tuit={tuit} likeTuit={likeTuit}/></li>
                                 {/*<li className="wd-icon-menu-post"><a href="#"><i className="far fa-heart wd-react-icon-style-post"></i></a></li>*/}
                                 {/*<li className="wd-numbers-gray-post"> {tuit.stats.likes}</li>*/}

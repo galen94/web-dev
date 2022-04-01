@@ -15,7 +15,7 @@ const HomeScreen = () => {
         <div>
             {/*<h2>Home</h2>*/}
             {/*<h3>Tuit list</h3>*/}
-            <WhatsHappening/>
+            {/*<WhatsHappening/>*/}
             <TuitList/>
         </div>
     );
