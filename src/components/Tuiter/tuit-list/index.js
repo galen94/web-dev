@@ -48,7 +48,14 @@ const TuitList = () => {
                 <li key={tuit._id} className="list-group-item">
             <i className="fa fa-window-close float-end"
                onClick={() => deleteTuit(dispatch, tuit)}></i>
-            {tuit.tuit}
+                    {tuit.postedBy.username + " "}@{tuit.postedBy.username}
+
+                    <br/>
+                    <br/>
+
+                    {tuit.tuit}
+                    <br/>
+                    <br/>
             <div>
                 Likes: {tuit.likes}
                 <i onClick={() => updateTuit(dispatch, {
